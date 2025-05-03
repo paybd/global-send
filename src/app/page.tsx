@@ -125,7 +125,7 @@ export default function Home() {
         <div className="flex-1 flex justify-center mb-8 md:mb-0">
           <Image
             ref={img1Ref}
-            src="/images/homescreen.jpg"
+            src="/images/homescreen.png"
             alt="App Home Screen"
             width={220}
             height={380}
@@ -144,7 +144,7 @@ export default function Home() {
         <div className="flex-1 flex justify-center mb-8 md:mb-0">
           <Image
             ref={img2Ref}
-            src="/images/homescreen.jpg"
+            src="/images/homescreen.png"
             alt="App Home Screen"
             width={220}
             height={380}
@@ -163,7 +163,7 @@ export default function Home() {
         <div className="flex-1 flex justify-center mb-8 md:mb-0">
           <Image
             ref={img3Ref}
-            src="/images/homescreen.jpg"
+            src="/images/homescreen.png"
             alt="App Home Screen"
             width={220}
             height={380}
