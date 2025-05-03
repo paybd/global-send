@@ -144,7 +144,7 @@ export default function Home() {
         <div className="flex-1 flex justify-center mb-8 md:mb-0">
           <Image
             ref={img2Ref}
-            src="/images/homescreen.png"
+            src="/images/add_money.png"
             alt="App Home Screen"
             width={220}
             height={380}
@@ -163,7 +163,7 @@ export default function Home() {
         <div className="flex-1 flex justify-center mb-8 md:mb-0">
           <Image
             ref={img3Ref}
-            src="/images/homescreen.png"
+            src="/images/history.png"
             alt="App Home Screen"
             width={220}
             height={380}
@@ -273,39 +273,42 @@ export default function Home() {
   );
 }
 
+
+
+
 function CustomerReviewCarousel() {
   const reviews = [
     {
-      name: "Amina R.",
-      avatar: "/images/avatar1.png",
-      text: "Global Send is fast and easy! My family gets money instantly.",
+      name: "Robiul Islam",
+      avatar: "https://agqgdagxuquioslljswr.supabase.co/storage/v1/object/public/images/alamtanvir257@gmail.com/1745775364387",
+      text: "লেনদেন সহজ। আমি এটি প্রতিদিন ব্যবহার করি।",
       rating: 5,
     },
     {
-      name: "John D.",
-      avatar: "/images/avatar2.png",
-      text: "The lowest fees and best rates. Highly recommended!",
+      name: "Sohag Hossain",
+      avatar: "https://ofxmtsetqvaxyqwdsowg.supabase.co/storage/v1/object/public/fakeimages//451832321_886699950160725_8311947380942117697_n.jpg",
+      text: "সবচেয়ে কম ফি এবং সবচেয়ে ভাল রেট।",
       rating: 5,
     },
     {
-      name: "Maria S.",
-      avatar: "/images/avatar3.png",
-      text: "I love the app design and how secure it feels.",
+      name: "Mohammad Sohanur Rahman",
+      avatar: "https://ofxmtsetqvaxyqwdsowg.supabase.co/storage/v1/object/public/fakeimages//73.jpg",
+      text: "অ্যাপটি ব্যবহার করা খুব সহজ। সেরা অ্যাপ।",
       rating: 4,
     },
     {
-      name: "Rahim U.",
-      avatar: "/images/avatar4.png",
-      text: "Support is always helpful. Transfers are reliable.",
+      name: "Zobayer Hossain",
+      avatar: "https://ofxmtsetqvaxyqwdsowg.supabase.co/storage/v1/object/public/fakeimages//13.jpg",
+      text: "রিসেলার গ্রুপ এবং কাস্টমার সাপোর্ট সবচেয়ে ভাল।",
       rating: 5,
     },
   ];
   // Use placeholder avatars if local images are missing
   const placeholderAvatars = [
-    "https://randomuser.me/api/portraits/women/44.jpg",
-    "https://randomuser.me/api/portraits/men/32.jpg",
-    "https://randomuser.me/api/portraits/women/68.jpg",
-    "https://randomuser.me/api/portraits/men/76.jpg",
+    "https://agqgdagxuquioslljswr.supabase.co/storage/v1/object/public/images/alamtanvir257@gmail.com/1745775364387",
+    "https://ofxmtsetqvaxyqwdsowg.supabase.co/storage/v1/object/public/fakeimages//451832321_886699950160725_8311947380942117697_n.jpg",
+    "https://ofxmtsetqvaxyqwdsowg.supabase.co/storage/v1/object/public/fakeimages//73.jpg",
+    "https://ofxmtsetqvaxyqwdsowg.supabase.co/storage/v1/object/public/fakeimages//13.jpg",
   ];
   const [idx, setIdx] = React.useState(0);
   React.useEffect(() => {
@@ -431,7 +434,7 @@ function DownloadWithProgress() {
       setDownloading(true);
       setProgress(0);
       
-      const url = "https://raw.githubusercontent.com/paybd/grs-remit-for-me/main/public/global-send.apk";
+      const url = "https://raw.githubusercontent.com/paybd/grs-remit-for-me/main/public/gs_agent.apk";
       
       const response = await fetch(url);
       
