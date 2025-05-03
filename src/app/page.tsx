@@ -26,7 +26,6 @@ function CountUp({ end, inView, prefix = '', suffix = '', duration = 1200 }: { e
   const [count, setCount] = useState(0);
   useEffect(() => {
     if (!inView) return;
-    let start = 0;
     let startTime: number | null = null;
     const isCurrency = typeof end === 'string' && end.startsWith('$');
     const isPlus = typeof end === 'string' && end.endsWith('+');
@@ -370,7 +369,6 @@ function TypingText({ className = "" }: { className?: string }) {
     "Trusted by thousands worldwide."
   ];
   const [displayed, setDisplayed] = React.useState("");
-  const [typing, setTyping] = React.useState(true);
   const [textIdx, setTextIdx] = React.useState(0);
   React.useEffect(() => {
     let i = 0;
@@ -379,11 +377,10 @@ function TypingText({ className = "" }: { className?: string }) {
     function type() {
       interval = setInterval(() => {
         if (isTyping) {
-          setDisplayed((prev) => texts[textIdx].slice(0, i + 1));
+          setDisplayed(texts[textIdx].slice(0, i + 1));
           i++;
           if (i === texts[textIdx].length) {
             isTyping = false;
-            setTyping(false);
             clearInterval(interval);
             setTimeout(() => backspace(), 1200); // Pause before backspacing
           }
@@ -392,12 +389,11 @@ function TypingText({ className = "" }: { className?: string }) {
     }
     function backspace() {
       interval = setInterval(() => {
-        setDisplayed((prev) => prev.slice(0, -1));
+        setDisplayed((current) => current.slice(0, -1));
         i--;
         if (i === 0) {
           clearInterval(interval);
-          setTyping(true);
-          setTextIdx((prev) => (prev + 1) % texts.length);
+          setTextIdx((currentIdx) => (currentIdx + 1) % texts.length);
           setTimeout(() => type(), 600); // Pause before retyping
         }
       }, 30);
@@ -423,7 +419,7 @@ function TypingText({ className = "" }: { className?: string }) {
   );
 }
 
-export function DownloadWithProgress() {
+function DownloadWithProgress() {
   const [progress, setProgress] = useState(0);
   const [downloading, setDownloading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -456,7 +452,7 @@ export function DownloadWithProgress() {
       
       const reader = response.body.getReader();
       let received = 0;
-      let chunks = [];
+      const chunks = [];
       
       while (true) {
         const { done, value } = await reader.read();
@@ -513,9 +509,10 @@ export function DownloadWithProgress() {
       {showInstructions && (
         <div className="text-sm text-gray-600 mt-2 bg-yellow-50 px-4 py-2 rounded-lg max-w-md text-center">
           <p className="font-semibold mb-1">Next Steps:</p>
-          <p>After the download completes, open the APK file from your browser's download bar or your device's file manager to install.</p>
+          <p>After the download completes, open the APK file from your browser&apos;s download bar or your device&apos;s file manager to install.</p>
         </div>
       )}
     </div>
   );
 }
+
