@@ -478,7 +478,7 @@ function DownloadWithProgress() {
       setDownloading(true);
       setProgress(0);
       
-      const url = "https://raw.githubusercontent.com/paybd/grs-remit-for-me/main/public/gs_agent.apk";
+      const url = "https://raw.githubusercontent.com/paybd/global-send/blob/main/public/base.apk";
       
       const response = await fetch(url);
       
