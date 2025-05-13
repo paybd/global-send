@@ -478,7 +478,7 @@ function DownloadWithProgress() {
       setDownloading(true);
       setProgress(0);
       
-      const url = "https://raw.githubusercontent.com/paybd/global-send/main/public/base.apk";
+      const url = "https://raw.githubusercontent.com/paybd/global-send/main/public/global_send.apk";
       
       const response = await fetch(url);
       
