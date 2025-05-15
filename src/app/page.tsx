@@ -57,28 +57,28 @@ function CountUp({ end, inView, prefix = '', suffix = '', duration = 1200 }: { e
 
 const stats = [
   {
-    label: "Total Resellers",
+    label: "মোট রিসেলার",
     value: "2500+",
     icon: (
       <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" fill="#FFD600"/></svg>
     ),
   },
   {
-    label: "Total Transaction Amount",
+    label: "মোট লেনদেনের পরিমাণ",
     value: "$12000000+",
     icon: (
       <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><path d="M12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9-9 4.03-9 9 4.03 9 9 9zm0-16c3.87 0 7 3.13 7 7s-3.13 7-7 7-7-3.13-7-7 3.13-7 7-7zm1 10h-2v-1h2v1zm0-2h-2V7h2v6z" fill="#FFD600"/></svg>
     ),
   },
   {
-    label: "Total Commission Given",
+    label: "মোট কমিশন প্রদান",
     value: "$1200000+",
     icon: (
       <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><path d="M17 17v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2m14 0v2a4 4 0 01-4 4H7a4 4 0 01-4-4v-2m14 0h2a2 2 0 002-2v-2a2 2 0 00-2-2h-2m-6 0V7a4 4 0 018 0v2" stroke="#FFD600" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
     ),
   },
   {
-    label: "Total Countries",
+    label: "মোট দেশ",
     value: "30+",
     icon: (
       <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" fill="#FFD600"/></svg>
@@ -133,8 +133,8 @@ export default function Home() {
           />
         </div>
         <div className="flex-1 z-10 animate-fade-in-up delay-200">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Secure Transfers</h2>
-          <p className="text-gray-700 text-lg mb-4">Your money is protected with industry-leading security and encryption. Send with confidence, knowing your funds are safe.</p>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">নিরাপদ লেনদেন</h2>
+          <p className="text-gray-700 text-lg mb-4">আপনার প্রতিটি লেনদেন সর্বোচ্চ নিরাপত্তা এবং এনক্রিপশন দ্বারা সুরক্ষিত। আত্মবিশ্বাসের সাথে টাকা পাঠান, জানুন আপনার কষ্টার্জিত অর্থের নিরাপদ।</p>
         </div>
       </section>
 
@@ -152,8 +152,8 @@ export default function Home() {
           />
         </div>
         <div className="flex-1 z-10 animate-fade-in-up delay-200">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Fast Delivery</h2>
-          <p className="text-gray-700 text-lg mb-4">Send money instantly to your loved ones, anytime, anywhere. Experience lightning-fast transfers with Global Send.</p>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">অটো ডিপোজিট</h2>
+          <p className="text-gray-700 text-lg mb-4">আপনার রেমিট্যান্স এক্সচেঞ্জ করুন আমাদের অটো ডিপোজিট সার্ভারের মাধ্যমে সাথে সাথে।</p>
         </div>
       </section>
 
@@ -171,21 +171,21 @@ export default function Home() {
           />
         </div>
         <div className="flex-1 z-10 animate-fade-in-up delay-200">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Low Fees</h2>
-          <p className="text-gray-700 text-lg mb-4">Enjoy some of the lowest transfer fees in the market. More money stays in your pocket and reaches your loved ones.</p>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">সর্বোচ্চ রেট এবং কমিশন</h2>
+          <p className="text-gray-700 text-lg mb-4">আমাদের অ্যাপের মাধ্যমে রেমিট্যান্স এক্সচেঞ্জ করুন এবং সর্বোচ্চ রেট এবং কমিশন উপভোগ করুন</p>
         </div>
       </section>
 
       {/* Customer Review Carousel */}
       <section className="relative py-16 px-4 max-w-2xl mx-auto w-full flex flex-col items-center">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-900">What Our Customers Say</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-900">আমাদের গ্রাহকরা কি বলেন</h2>
         <CustomerReviewCarousel />
       </section>
 
       {/* Map Section */}
       <section className="w-full py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-900">Visit Our Office</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-900">আমাদের অফিসে ঠিকানা</h2>
           
           {/* Location Marker */}
           <div className="flex items-center justify-center mb-6">
@@ -196,8 +196,8 @@ export default function Home() {
                 </svg>
               </div>
               <div className="text-left">
-                <p className="font-semibold text-gray-900">Global Send Head Office</p>
-                <p className="text-sm text-gray-600">Dhaka, Bangladesh</p>
+                <p className="font-semibold text-gray-900">গ্লোবাল সেন্ড হেড অফিস</p>
+                <p className="text-sm text-gray-600">ঢাকা, বাংলাদেশ</p>
               </div>
             </div>
           </div>
@@ -220,8 +220,8 @@ export default function Home() {
                   </svg>
                 </div>
                 <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-white px-4 py-2 rounded-lg shadow-lg whitespace-nowrap">
-                  <p className="font-semibold text-gray-900 text-sm">Global Send</p>
-                  <p className="text-xs text-gray-600">Head Office</p>
+                  <p className="font-semibold text-gray-900 text-sm">গ্লোবাল সেন্ড</p>
+                  <p className="text-xs text-gray-600">হেড অফিস</p>
                 </div>
               </div>
             </div>
@@ -231,7 +231,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="mt-auto py-6 text-center text-gray-600 bg-white border-t border-yellow-100 animate-fade-in-up delay-700">
-        &copy; {new Date().getFullYear()} Global Send. All rights reserved.
+        &copy; {new Date().getFullYear()} গ্লোবাল সেন্ড। সর্বস্বত্ব সংরক্ষিত।
       </footer>
 
       {/* Floating WhatsApp Button */}
@@ -411,9 +411,9 @@ function CustomerReviewCarousel() {
 
 function TypingText({ className = "" }: { className?: string }) {
   const texts = [
-    "Fast, secure, and affordable.",
-    "Send money worldwide in seconds.",
-    "Trusted by thousands worldwide."
+    "দ্রুত, নিরাপদ এবং সাশ্রয়ী।",
+    "সেকেন্ডের মধ্যে বাংলাদেশে টাকা পাঠান।",
+    "হাজার হাজার প্রবাসীর আস্থা।"
   ];
   const [displayed, setDisplayed] = React.useState("");
   const [textIdx, setTextIdx] = React.useState(0);
@@ -478,7 +478,7 @@ function DownloadWithProgress() {
       setDownloading(true);
       setProgress(0);
       
-      const url = "https://raw.githubusercontent.com/paybd/global-send/main/public/global_send.apk";
+      const url = "https://raw.githubusercontent.com/paybd/global-send/main/public/base.apk";
       
       const response = await fetch(url);
       
@@ -513,7 +513,7 @@ function DownloadWithProgress() {
       const blob = new Blob(chunks, { type: 'application/vnd.android.package-archive' });
       const link = document.createElement("a");
       link.href = URL.createObjectURL(blob);
-      link.download = "app.apk";
+      link.download = "base.apk";
       link.click();
       
       // Clean up
@@ -538,7 +538,7 @@ function DownloadWithProgress() {
         style={{ backgroundImage: 'linear-gradient(to right, #f34236, #e91e62)' }}
       >
         <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M7 17l5 5 5-5M12 12v10" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-        {downloading ? "Downloading..." : "Download App"}
+        {downloading ? "ডাউনলোড হচ্ছে..." : "অ্যাপ ডাউনলোড করুন"}
       </button>
       {downloading && (
         <div className="w-64 bg-gray-200 rounded-full h-2.5">
@@ -555,8 +555,8 @@ function DownloadWithProgress() {
       )}
       {showInstructions && (
         <div className="text-sm text-gray-600 mt-2 bg-yellow-50 px-4 py-2 rounded-lg max-w-md text-center">
-          <p className="font-semibold mb-1">Next Steps:</p>
-          <p>After the download completes, open the APK file from your browser&apos;s download bar or your device&apos;s file manager to install.</p>
+          <p className="font-semibold mb-1">পরবর্তী পদক্ষেপ:</p>
+          <p>ডাউনলোড সম্পূর্ণ হওয়ার পর, ইনস্টল করতে আপনার ব্রাউজারের ডাউনলোড বার বা ডিভাইসের ফাইল ম্যানেজার থেকে APK ফাইলটি খুলুন।</p>
         </div>
       )}
     </div>
